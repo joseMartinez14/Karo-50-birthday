@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Karo 50 años</title>
+<meta name="description" content="Te invito a celebrar mis 50 años. Domingo 20 de diciembre, 11:00 a.m., El Castillo Country Club, San Rafael de Heredia.">
+<meta property="og:title" content="Te invito a celebrar mis 50 años · Karo">
+<meta property="og:description" content="Domingo 20 de diciembre, 11:00 a.m. · El Castillo Country Club, San Rafael de Heredia">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://josemartinez14.github.io/Karo-50-birthday/">
+<meta property="og:image" content="https://josemartinez14.github.io/Karo-50-birthday/invitacion.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="2104">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@400;500;700&display=swap">
+<style>
+  /* Layout: vertical card — warm sunset sky with string lights and the name, a big forested peak with mist as the hero, elephants walking on the front hill, details on the forest floor. Single deliberate look. */
+  :root {
+    --dawn: #fbf1e6;
+    --peach: #f3d3b0;
+    --mist: #c9d6cc;
+    --forest: #2b463c;
+    --ink: #24372d;
+    --paper: #f4f6f1;
+    --gold: #b5772f;
+    --gold-soft: #ecd09c;
+    --muted: #7a5e48;
+    --display: "Marcellus", Georgia, serif;
+    --body: "Karla", "Helvetica Neue", Arial, sans-serif;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--forest);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.55;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .card { max-width: 560px; margin: 0 auto; background: var(--paper); }
+  .sky {
+    position: relative;
+    background: linear-gradient(var(--dawn) 0%, var(--peach) 100%);
+    text-align: center;
+    padding-block: 76px 4px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    display: grid;
+    justify-items: center;
+    gap: 6px;
+  }
+  .lights { position: absolute; top: 0; left: 0; width: 100%; height: auto; pointer-events: none; }
+  .eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+  .age { display: flex; align-items: baseline; justify-content: center; gap: 10px; }
+  .age .num { font-family: var(--display); font-size: clamp(4.5rem, 22vw, 6.5rem); line-height: 1; color: var(--gold); }
+  .age .word { font-family: var(--display); font-size: 1.6rem; color: var(--ink); }
+  h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(3rem, 14vw, 4.2rem);
+    line-height: 1.05;
+    margin: 0;
+    color: var(--ink);
+  }
+  .note {
+    font-family: var(--display);
+    font-size: 1.12rem;
+    line-height: 1.45;
+    color: var(--muted);
+    max-width: 30ch;
+    margin: 10px 0 0;
+    text-wrap: balance;
+  }
+  .scene { display: block; width: 100%; height: auto; max-width: 100%; margin-top: -2px; }
+
+  .details {
+    background: var(--forest);
+    color: var(--paper);
+    padding-block: 12px 40px;
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+    display: grid;
+    gap: 30px;
+  }
+  .facts { display: grid; gap: 18px; margin: 0; }
+  .fact { display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start; }
+  .fact svg { width: 26px; height: 26px; margin-top: 2px; }
+  .fact dt { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-soft); }
+  .fact dd { margin: 2px 0 0; font-size: 1.08rem; }
+  .fact dd small { display: block; color: var(--mist); font-size: 0.92rem; }
+
+  .map-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font: 500 0.95rem var(--body);
+    text-decoration: none;
+    border: 1px solid var(--gold-soft);
+    color: var(--paper);
+  }
+  .btn:hover { background: rgba(236, 208, 156, 0.12); }
+  .btn:focus-visible { outline: 2px solid var(--gold-soft); outline-offset: 2px; }
+
+  .rsvp {
+    text-align: center;
+    border-top: 1px solid rgba(201, 214, 204, 0.25);
+    padding-top: 26px;
+    display: grid;
+    gap: 6px;
+  }
+  .rsvp h2 { font-family: var(--display); font-weight: 400; font-size: 1.5rem; margin: 0; }
+  .rsvp p { margin: 0; color: var(--mist); }
+  .rsvp strong { color: var(--gold-soft); font-weight: 500; }
+
+  .closing { text-align: center; display: grid; gap: 4px; }
+  .closing p { margin: 0; }
+  .closing .warm { color: var(--mist); font-family: var(--display); font-size: 1.05rem; }
+  .closing .big { font-family: var(--display); color: var(--gold-soft); font-size: 1.4rem; }
+
+  /* Versión imagen (abrir con #imagen): sin botones, que en una foto no funcionan */
+  .png .map-links { display: none; }
+  .png .walk, .png .bulb { animation: none; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .walk { animation: sway 4s ease-in-out infinite; transform-origin: center bottom; transform-box: fill-box; }
+    @keyframes sway { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-1.5px); } }
+    .bulb { animation: glow 3s ease-in-out infinite; }
+    .bulb:nth-child(2n) { animation-delay: 1.5s; }
+    @keyframes glow { 0%,100% { opacity: 0.55; } 50% { opacity: 0.9; } }
+  }
+</style>
+<script>if (location.hash === "#imagen") document.documentElement.classList.add("png");</script>
+</head>
+<body>
+<main class="card">
+  <header class="sky">
+    <svg class="lights" viewBox="0 0 560 70" aria-hidden="true">
+      <path d="M-10 8 Q140 66 280 14 Q420 66 570 8" fill="none" stroke="#6b5544" stroke-width="1.2"/>
+      <g fill="#ffd27a">
+        <circle class="bulb" cx="40" cy="26" r="9" opacity="0.6"/>
+        <circle class="bulb" cx="100" cy="38" r="9" opacity="0.6"/>
+        <circle class="bulb" cx="165" cy="38" r="9" opacity="0.6"/>
+        <circle class="bulb" cx="225" cy="28" r="9" opacity="0.6"/>
+        <circle class="bulb" cx="335" cy="28" r="9" opacity="0.6"/>
+        <circle class="bulb" cx="395" cy="38" r="9" opacity="0.6"/>
+        <circle class="bulb" cx="460" cy="38" r="9" opacity="0.6"/>
+        <circle class="bulb" cx="520" cy="26" r="9" opacity="0.6"/>
+      </g>
+      <g fill="#fff3cf">
+        <circle cx="40" cy="26" r="3.5"/><circle cx="100" cy="38" r="3.5"/><circle cx="165" cy="38" r="3.5"/><circle cx="225" cy="28" r="3.5"/>
+        <circle cx="335" cy="28" r="3.5"/><circle cx="395" cy="38" r="3.5"/><circle cx="460" cy="38" r="3.5"/><circle cx="520" cy="26" r="3.5"/>
+      </g>
+    </svg>
+    <p class="eyebrow">Te invito a celebrar mis</p>
+    <div class="age"><span class="num">50</span><span class="word">años</span></div>
+    <h1>Karo</h1>
+    <p class="note">Quiero celebrar este día tan especial con las personas que llenan mi vida de alegría.</p>
+  </header>
+
+  <svg class="scene" viewBox="0 0 800 340" role="img" aria-label="Una montaña grande al atardecer, con niebla en el valle y una elefanta caminando con sus dos crías">
+    <defs>
+      <linearGradient id="skyg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f3d3b0"/>
+        <stop offset="0.55" stop-color="#f1b98d"/>
+        <stop offset="1" stop-color="#e9a47f"/>
+      </linearGradient>
+      <radialGradient id="sunglow" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#ffe7a8" stop-opacity="0.9"/>
+        <stop offset="1" stop-color="#ffe7a8" stop-opacity="0"/>
+      </radialGradient>
+      <g id="elephant-body">
+        <path d="M14 40 Q6 52 9 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <ellipse cx="50" cy="42" rx="38" ry="25" fill="currentColor"/>
+        <rect x="20" y="52" width="12" height="28" rx="5" fill="currentColor"/>
+        <rect x="35" y="54" width="12" height="26" rx="5" fill="currentColor"/>
+        <rect x="60" y="54" width="12" height="26" rx="5" fill="currentColor"/>
+        <rect x="74" y="52" width="12" height="28" rx="5" fill="currentColor"/>
+        <circle cx="92" cy="30" r="19" fill="currentColor"/>
+        <path d="M80 18 Q66 22 68 38 Q70 52 84 48 Q90 36 80 18Z" fill="#3d5446"/>
+        <circle cx="99" cy="25" r="1.8" fill="#f3d3b0"/>
+      </g>
+    </defs>
+
+    <rect width="800" height="340" fill="url(#skyg)"/>
+
+    <circle cx="640" cy="176" r="90" fill="url(#sunglow)"/>
+    <circle cx="640" cy="176" r="34" fill="#fde3a4"/>
+
+    <path d="M200 70 q7 -6 14 0 q7 -6 14 0" fill="none" stroke="#8a6a55" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M246 92 q5 -4 10 0 q5 -4 10 0" fill="none" stroke="#8a6a55" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- cordillera lejana, azulada por la distancia -->
+    <path d="M0 214 L70 190 L140 204 L210 182 L290 200 L380 196 L500 204 L580 186 L660 198 L740 178 L800 188 L800 340 L0 340Z" fill="#a9b3ad"/>
+
+    <!-- la montaña protagonista -->
+    <path d="M110 340 L260 214 L330 168 L392 96 L428 62 L446 58 L470 82 L520 128 L600 196 L700 250 L800 276 L800 340Z" fill="#6c8a7d"/>
+    <path d="M446 58 L470 82 L520 128 L600 196 L700 250 L800 276 L800 340 L470 340 L462 230 L452 140Z" fill="#577568"/>
+    <path d="M392 96 L410 104 L404 130 L420 116 L428 62Z" fill="#7d9a8c" opacity="0.8"/>
+
+    <!-- niebla en el valle -->
+    <path d="M0 236 Q180 212 380 232 Q590 252 800 226 L800 254 Q600 276 390 256 Q190 238 0 262Z" fill="#fbf1e6" opacity="0.55"/>
+
+    <!-- colinas con bosque -->
+    <path d="M0 272 Q150 242 300 264 Q450 284 600 258 Q700 242 800 262 L800 340 L0 340Z" fill="#6f8f6c"/>
+    <g fill="#4d6e4f">
+      <circle cx="40" cy="262" r="14"/><circle cx="62" cy="256" r="17"/><circle cx="86" cy="262" r="12"/>
+      <circle cx="160" cy="258" r="11"/><circle cx="176" cy="252" r="14"/>
+      <circle cx="640" cy="254" r="13"/><circle cx="662" cy="248" r="16"/><circle cx="686" cy="254" r="12"/>
+      <circle cx="748" cy="256" r="15"/><circle cx="772" cy="252" r="12"/>
+    </g>
+
+    <path d="M0 304 Q200 274 400 292 Q600 310 800 284 L800 340 L0 340Z" fill="#4b6b4f"/>
+
+    <g color="#263b30">
+      <g transform="translate(400 214)"><g class="walk">
+        <use href="#elephant-body"/>
+        <path d="M106 36 Q116 46 113 62 Q110 74 118 76" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
+        <path d="M102 40 Q110 46 114 44" fill="none" stroke="#fbf1e6" stroke-width="2.5" stroke-linecap="round"/>
+      </g></g>
+      <g transform="translate(338 250) scale(0.55)"><g class="walk">
+        <use href="#elephant-body"/>
+        <path d="M106 36 Q120 46 128 30" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+      </g></g>
+      <g transform="translate(287 256) scale(0.45)"><g class="walk">
+        <use href="#elephant-body"/>
+        <path d="M106 36 Q120 46 128 30" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/>
+      </g></g>
+    </g>
+
+    <path d="M0 328 Q400 306 800 330 L800 340 L0 340Z" fill="#2b463c"/>
+  </svg>
+
+  <section class="details">
+    <dl class="facts">
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ecd09c" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <div><dt>Fecha</dt><dd>Domingo 20 de diciembre de 2026</dd></div>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ecd09c" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div><dt>Hora</dt><dd>A partir de las 11:00 a.m.</dd></div>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ecd09c" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <div>
+          <dt>Lugar</dt>
+          <dd>El Castillo Country Club<small>San Rafael de Heredia, Costa Rica</small></dd>
+          <div class="map-links">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=El%20Castillo%20Country%20Club%20San%20Rafael%20Heredia%20Costa%20Rica" target="_blank" rel="noopener">Abrir en Google Maps</a>
+            <a class="btn" href="https://waze.com/ul?q=El%20Castillo%20Country%20Club%20San%20Rafael%20Heredia&amp;navigate=yes" target="_blank" rel="noopener">Abrir en Waze</a>
+          </div>
+        </div>
+      </div>
+    </dl>
+
+    <section class="rsvp">
+      <h2>Confirmá tu asistencia</h2>
+      <p>Por favor, confirmá antes del <strong>sábado 5 de diciembre</strong>.</p>
+    </section>
+
+    <div class="closing">
+      <p class="warm">Tu compañía es el mejor regalo.</p>
+      <p class="big">¡Acompañame a festejar!</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>
